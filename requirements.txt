@@ -1,0 +1,17 @@
+os
+shutil
+re
+numpy
+scipy
+pandas
+torch
+matplotlib
+h5py
+json
+zipfile
+argparse
+copy
+timeit
+horovod # for multi-GPU training, depends on your computing centre
+mpi4py # only for GOF computation
+obspy # only for GOF computation

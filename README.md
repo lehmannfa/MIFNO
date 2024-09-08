@@ -7,11 +7,12 @@ Train a Multiple-Input Fourier Neural Operator (MIFNO) to predict the solution o
 The MIFNO is trained on the [HEMEW<sup>S</sup>-3D database](https://doi.org/10.57745/LAI6YU) that contains 30,000 simulations of the 3D elastic wave equation in heterogeneous media with different sources. The folder `data` contains the codes to pre-process the data and save them to a format convenient for machine learning applications.
 
 ## Training
-The folder `models` contains the models' architectures for the MIFNO and the F-FNO. The main code is `train.py` that serves to train the models. Scripts `launch_ffno.sh` and `launch_mifno.sh` show how to define the variables to train the models. 
+The folder `models` contains the models' architectures for the MIFNO and the F-FNO. The main code is `train.py` which serves to train the models. Scripts `launch_ffno.sh` and `launch_mifno.sh` show how to define the variables to train the models. 
 
 ## Evaluation
-The folder `models` contains the code `evalute_metrics.py` to evaluate the predictions with different metrics: relative Mean Absolute Error (rMAE), relative Root Mean Square Error (rRMSE) and frequency biases.
-The difference between two seismic signals is commonly assessed with the Envelope and Phase Goodness-Of-Fit (GOF) measures ([Kristekova et al., 2009](https://doi.org/10.1111/j.1365-246X.2009.04177.x)). The code `evaluate_gof.py` computes the envelope and phase GOFs of MIFNO prediction. It requires the [obspy](https://docs.obspy.org/) package and runs in parallel.
+The folder `models` contains the code `evaluate_metrics.py` to evaluate the predictions with different metrics: relative Mean Absolute Error (rMAE), relative Root Mean Square Error (rRMSE) and frequency biases.
+
+The difference between two seismic signals is commonly assessed with the Envelope and Phase Goodness-Of-Fit (GOF) measures ([Kristekova et al., 2009](https://doi.org/10.1111/j.1365-246X.2009.04177.x)). The code `evaluate_gof.py` computes the envelope and phase GOFs of MIFNO prediction. It requires the [obspy](https://docs.obspy.org/) package and runs in parallel. Before computing the GOFs, you must run `evaluate_metrics.py` as it saves the outputs needed for the GOF computation.
 
 ## Visualization
 A jupyter notebook `Plots.ipynb` illustrates the input and output data. 

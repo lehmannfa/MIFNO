@@ -21,16 +21,15 @@ A jupyter notebook `Plots.ipynb` illustrates the input and output data.
 ## References
 If you use this code, please cite 
 ```
-@misc{lehmannMultipleInputFourierNeural2024,
-  title = {Multiple-{{Input Fourier Neural Operator}} ({{MIFNO}}) for Source-Dependent {{3D}} Elastodynamics},
+@article{lehmannMultipleinputFourierNeural2025,
+  title = {Multiple-Input {{Fourier Neural Operator}} ({{MIFNO}}) for Source-Dependent {{3D}} Elastodynamics},
   author = {Lehmann, Fanny and Gatti, Filippo and Clouteau, Didier},
-  year = {2024},
-  number = {arxiv:2404.10115},
-  eprint = {2404.10115},
-  publisher = {arXiv},
-  url = {https://arxiv.org/abs/2404.10115},
-  archiveprefix = {arXiv},
-  annotation = {10.48550/ARXIV.2404.10115},
+  year = {2025},
+  journal = {Journal of Computational Physics},
+  volume = {527},
+  pages = {113813},
+  issn = {00219991},
+  doi = {10.1016/j.jcp.2025.113813},
 }
 ```
 

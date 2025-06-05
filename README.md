@@ -1,7 +1,7 @@
 # MIFNO
 Train a Multiple-Input Fourier Neural Operator (MIFNO) to predict the solution of 3D source-dependent Partial Differential Equations (PDEs). The MIFNO is described in the article [Multiple-Input Fourier Neural Operator (MIFNO) for source-dependent 3D elastodynamics](https://doi.org/10.1016/j.jcp.2025.113813). It extends the 3D Factorized Fourier Neural Operator (F-FNO, [Tran et al., 2023](https://openreview.net/forum?id=tmIiMPl4IPa)) to PDEs with a source term. As such, the MIFNO contains a dedicated *source branch* that takes as input a vector of source parameters. 
 
-![MIFNO](https://github.com/user-attachments/assets/e08b86b4-2374-41ee-8e4f-7a4ab8019805)
+![MIFNO](https://github.com/lehmannfa/MIFNO/blob/main/assets/images/graphical_abstract.png)
 
 ## Data
 The MIFNO is trained on the [HEMEW<sup>S</sup>-3D database](https://doi.org/10.57745/LAI6YU) that contains 30,000 simulations of the 3D elastic wave equation in heterogeneous media with different sources. The folder `data` contains the codes to pre-process the data and save them to a format convenient for machine learning applications.

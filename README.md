@@ -9,6 +9,8 @@ The MIFNO is trained on the [HEMEW<sup>S</sup>-3D database](https://doi.org/10.5
 ## Training
 The folder `models` contains the models' architectures for the MIFNO and the F-FNO. The main code is `train.py` which serves to train the models. Scripts `launch_ffno.sh` and `launch_mifno.sh` show how to define the variables to train the models. 
 
+**The model checkpoint** obtained after 300 epochs is available on [HuggingFace](https://huggingface.co/lehmannfa/MIFNO) with a Jupyter notebook to run inference predictions.
+
 ## Evaluation
 The folder `models` contains the code `evaluate_metrics.py` to evaluate the predictions with different metrics: relative Mean Absolute Error (rMAE), relative Root Mean Square Error (rRMSE) and frequency biases.
 

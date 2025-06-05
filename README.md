@@ -1,5 +1,5 @@
 # MIFNO
-Train a Multiple-Input Fourier Neural Operator (MIFNO) to predict the solution of 3D source-dependent Partial Differential Equations (PDEs). The MIFNO is described in the article [Multiple-Input Fourier Neural Operator (MIFNO) for source-dependent 3D elastodynamics](https://arxiv.org/abs/2404.10115). It extends the 3D Factorized Fourier Neural Operator (F-FNO, [Tran et al., 2023](https://openreview.net/forum?id=tmIiMPl4IPa)) to PDEs with a source term. As such, the MIFNO contains a dedicated *source branch* that takes as input a vector of source parameters. 
+Train a Multiple-Input Fourier Neural Operator (MIFNO) to predict the solution of 3D source-dependent Partial Differential Equations (PDEs). The MIFNO is described in the article [Multiple-Input Fourier Neural Operator (MIFNO) for source-dependent 3D elastodynamics](https://doi.org/10.1016/j.jcp.2025.113813). It extends the 3D Factorized Fourier Neural Operator (F-FNO, [Tran et al., 2023](https://openreview.net/forum?id=tmIiMPl4IPa)) to PDEs with a source term. As such, the MIFNO contains a dedicated *source branch* that takes as input a vector of source parameters. 
 
 ![MIFNO](https://github.com/user-attachments/assets/e08b86b4-2374-41ee-8e4f-7a4ab8019805)
 
